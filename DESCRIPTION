@@ -1,12 +1,12 @@
 Package: depret
 Type: Package
-Title: What the Package Does (Title Case)
+Title: An interface in R for deployed model intepretation.
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Young Hector
+Maintainer: Young Hector <hectoryang1995@gmail.com>
+Description: Thanks to R httr & shiny, python django & flask.
+License: MIT
 Encoding: UTF-8
 LazyData: true
+Imports: httr
 RoxygenNote: 6.1.1.9000

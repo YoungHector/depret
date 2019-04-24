@@ -43,3 +43,8 @@ DepretClass = setRefClass(
     }
   )
 )
+
+create_dep_model = function(base_src = NULL){
+  return(DepretClass$new(base_src))
+}
+
