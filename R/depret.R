@@ -44,7 +44,7 @@ DepretClass = setRefClass(
   )
 )
 
-create_dep_model = function(base_src = NULL){
+create_dep_model = function(base_src = '127.0.0.1:5000'){
   return(DepretClass$new(base_src))
 }
 
