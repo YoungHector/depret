@@ -43,8 +43,32 @@ DepretClass = setRefClass(
     }
   )
 )
-
-create_dep_model = function(base_src = '127.0.0.1:5000'){
+# for Ref Class.
+create_dep_model_rc = function(base_src = '127.0.0.1:5000'){
   return(DepretClass$new(base_src))
+}
+
+
+# for s3 class
+depret_model_s3 <- function(base_src = '127.0.0.1:5000') {
+
+  value <- list(base_src = base_src)
+  # class can be set using class() or attr() function
+  attr(value, "class") <- "depretclass_s3"
+  value
+}
+
+blackbox_post = function(obj, query){
+  # str(obj)
+  resp <- POST(obj$base_src, body=list(query = query), encode="json")
+  unlist(content(resp, as = "parsed"))
+}
+
+
+predict.depretclass_s3 = function(obj, input = NULL){
+  features = lapply(names(input), function(x) input[[x]])
+  names(features) = names(input)
+  # str(features)
+  blackbox_post(obj, features)
 }
 
