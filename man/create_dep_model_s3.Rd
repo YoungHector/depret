@@ -8,7 +8,6 @@ create_dep_model_s3(base_src)
 This function returns a model with predict function, compatible with packages such as iml.
 }
 \examples{
-new_model = create_dep_model_s3(base_src)
+new_model = create_dep_model_s3(base_src = '127.0.0.1:5000')
 predictor = Predictor$new(new_model, data = iris[,1:4], y = iris$Species)
-...
 }

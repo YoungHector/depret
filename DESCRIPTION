@@ -1,10 +1,10 @@
 Package: depret
 Type: Package
-Title: An interface in R for deployed model intepretation.
-Version: 0.1.0
+Title: Deployed Model Interpretation in R.
+Version: 0.1.1
 Author: Young Hector
 Maintainer: Young Hector <hectoryang1995@gmail.com>
-Description: Thanks to R httr & shiny, python django & flask.
+Description: An interface in R for deployed model intepretation.
 License: MIT
 Encoding: UTF-8
 LazyData: true
