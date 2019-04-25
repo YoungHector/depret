@@ -44,7 +44,7 @@ create_dep_model_rc = function(base_src = '127.0.0.1:5000'){
 
 
 # for s3 class
-depret_model_s3 <- function(base_src = '127.0.0.1:5000') {
+create_dep_model_s3 <- function(base_src = '127.0.0.1:5000') {
 
   value <- list(base_src = base_src)
   # class can be set using class() or attr() function
