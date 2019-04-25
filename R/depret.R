@@ -37,6 +37,7 @@ DepretClass = setRefClass(
     }
   )
 )
+
 # for Ref Class.
 create_dep_model_rc = function(base_src = '127.0.0.1:5000'){
   return(DepretClass$new(base_src))
@@ -57,7 +58,6 @@ blackbox_post = function(obj, query){
   resp <- POST(obj$base_src, body=list(query = query), encode="json")
   unlist(content(resp, as = "parsed"))
 }
-
 
 predict.depretclass_s3 = function(obj, input = NULL){
   features = lapply(names(input), function(x) input[[x]])

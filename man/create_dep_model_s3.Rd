@@ -1,11 +1,11 @@
 \name{create_dep_model_s3}
 \alias{create_dep_model_s3}
-\title{create a s3 model for depret, compatible with packages such as iml.}
+\title{S3 Deployed ML Model}
 \usage{
 create_dep_model_s3(base_src)
 }
 \description{
-returns a model with predict func.
+This function returns a model with predict function, compatible with packages such as iml.
 }
 \examples{
 new_model = create_dep_model_s3(base_src)
